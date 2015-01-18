@@ -1,0 +1,55 @@
+/*Table Border Definition*/
+table 	{border: solid black;
+		 border-collapse: collapse}
+th		{border: solid black}
+td		{border: solid black}
+
+/*Table Header Spacing, Font Style, and Font Weight*/
+thead th	{padding-left: .5em;
+		 padding-right: .5em}
+tbody th	{font-weight: normal;
+		 font-style: italic;
+		 padding-left: .5em;
+		 padding-right: .5em}
+		 
+/*Non-header elements of odd non-header rows have light green background*/
+/*Non-header elements of even non-header rows have light blue background*/
+tbody tr:nth-child(odd){
+		 background: #AAFFAA}
+tbody tr:nth-child(even){
+		 background: #AAAAFF}
+
+/*First non-header column elements have red text*/
+/*Third non-header column elements have blue text*/
+tbody tr td:nth-child(2){color: #FF0000}
+tbody tr td:nth-child(4){color: #0000FF}
+
+dl		{margin-top: 3em}
+
+/*Turn background of dd cells purple when dt cells are hovered over*/
+dl dt:hover + dd {background: #9900FF}
+
+/*Format form spacing Adapted from https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form */
+form 	{margin-top: 3em}
+form h1	{font-size: 20;
+		 margin-top: 0em}
+form div + div {margin-top: 1em}
+
+/*Format outer-content and inner-content divs*/
+.outer-content		{background-color: pink;
+					 margin-top: 20px;
+					 height: 50px;
+					 width: 75%;
+					 align: left}
+
+.inner-content		{background-color: #AAAAFF;
+					 text-align: center;
+					 height: 25px;
+					 width: 75%;
+					 position: relative;
+					 left: 12.5%;
+					 top: 12.5px}
+
+/*Format paragraphs and image*/
+body p:nth-child(6)	{margin-top: 60px}
+img					{float: left}
